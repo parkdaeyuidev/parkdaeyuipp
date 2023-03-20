@@ -142,7 +142,7 @@ export default function Home() {
           />
         </div>
         <div>
-          <video css={S.BackgroundVideo} src={require('@/assets/video/sea.mp4')} autoPlay muted loop />
+          <video css={S.BackgroundVideo} src={require('@/assets/video/sea.mp4')} autoPlay muted loop playsInline />
         </div>
       </div>
     </>
