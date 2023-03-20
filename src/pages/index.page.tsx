@@ -107,6 +107,7 @@ export default function Home() {
         <title>Parkdaeyuidev</title>
         <meta name="description" content="안녕하세요. 프론트엔드 개발자 박대윤입니다" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="robots" content="noindex" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div css={css`
@@ -128,6 +129,7 @@ export default function Home() {
             animationData={require('assets/lottie/play.json')}
             play={isPlayAudio}
             loop
+            style={{ width: 28, height: 28 }}
           />
         </div>
         <div css={S.ScrollDown} onClick={() => setIsPlayAudio(prev => !prev)}>
@@ -136,6 +138,7 @@ export default function Home() {
             animationData={require('assets/lottie/scrollDown.json')}
             play
             loop
+            style={{ width: 28, height: 28 }}
           />
         </div>
         <div>
