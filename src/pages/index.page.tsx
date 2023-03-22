@@ -5,9 +5,11 @@ import Lottie from 'react-lottie-player';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import PhraseFrame from '@/components/PhraseFrame';
 import { ContentList } from '@/components/ContentList';
+import Image from 'next/image';
 export default function Home() {
   const contentsRef = useRef<HTMLAudioElement>(null);
   const [isPlayAudio, setIsPlayAudio] = useState(false);
+  const [isVideoLoaded, setIsVideoLoaded] = useState(false);
 
   useEffect(() => {
     if (isPlayAudio) {
@@ -65,18 +67,21 @@ export default function Home() {
           />
         </div>
         <div>
-          <video
-            css={S.BackgroundVideo}
-            src={require('@/assets/video/sea.mp4')}
-            autoPlay
-            muted
-            loop
-            playsInline
-          // onLoadedData={(e) => {
-          //   console.log(e);
-          //   console.log('loaded!');
-          // }}
-          />
+          {
+            isVideoLoaded ?
+              <video
+                css={S.BackgroundVideo}
+                src={require('@/assets/video/sea.mp4')}
+                autoPlay={true}
+                muted={true}
+                loop
+                playsInline
+                onLoadedData={(e) => {
+                  setIsVideoLoaded(true);
+                }}
+              /> :
+              <Image css={S.BackgroundVideo} src={require('@/assets/image/img-bg.png')} alt="img-bg" />
+          }
         </div>
       </div>
     </>)
