@@ -74,8 +74,13 @@ export default function Home() {
             style={{ width: 28, height: 28 }}
           />
         </div>
-        <div>
-          <Image css={S.BackgroundImage({ isVideoLoaded })} src={require('@/assets/image/img-bg.png')} alt="img-bg" />
+        <div css={css`
+          width: 100vw;
+          height: 100vh;
+          display: flex;
+          justify-content: center;
+        `}>
+          {/* <Image css={S.BackgroundImage({ isVideoLoaded })} src={require('@/assets/image/img-bg.png')} alt="img-bg" /> */}
           <video
             ref={videoRef}
             css={S.BackgroundVideo}
@@ -88,7 +93,7 @@ export default function Home() {
               setIsVideoLoaded(true);
             }}
             poster={require('@/assets/image/img-bg.png')}
-          /> :
+          />
         </div>
       </div>
     </>)

@@ -24,7 +24,7 @@ export const MainLayer = css`
 
 export const SwiperSlide = css`
   height: 100%;   
-  padding: 0 20px 40px;
+  padding: 0 20px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -34,10 +34,11 @@ export const SwiperSlide = css`
 
 export const BackgroundImage = ({ isVideoLoaded = false }) => css`
   opacity: ${isVideoLoaded ? 0 : 1};
-  position: fixed;
+  /* position: fixed; */
+  position: absolute;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 800px;
   height: 100vh;
   object-fit: cover;
   overflow: hidden;
@@ -46,7 +47,7 @@ export const BackgroundImage = ({ isVideoLoaded = false }) => css`
 `
 
 export const BackgroundVideo = css`
-  width: 100%;
+  width: 800px;
   height: 100vh;
   object-fit: cover;
   overflow: hidden;

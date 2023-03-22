@@ -8,6 +8,8 @@ export default function PhraseFrame({ children }: React.PropsWithChildren) {
     css={css`
     opacity: ${inView ? 1 : 0};
     transition: all 0.5s;
+    width: 800px;
+    text-align: center;
     word-break: keep-all;
     `}>{children}</div>
 }
