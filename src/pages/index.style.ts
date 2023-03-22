@@ -30,6 +30,17 @@ export const SwiperSlide = css`
   font-size: 40px;
 `
 
+export const BackgroundImage = ({ isVideoLoaded = false }) => css`
+  opacity: ${isVideoLoaded ? 0 : 1};
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  overflow: hidden;
+`
+
 export const BackgroundVideo = css`
   width: 100%;
   height: 100vh;

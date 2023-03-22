@@ -6,6 +6,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import PhraseFrame from '@/components/PhraseFrame';
 import { ContentList } from '@/components/ContentList';
 import Image from 'next/image';
+import { css } from '@emotion/react';
 export default function Home() {
   const contentsRef = useRef<HTMLAudioElement>(null);
   const [isPlayAudio, setIsPlayAudio] = useState(false);
@@ -67,21 +68,18 @@ export default function Home() {
           />
         </div>
         <div>
-          {
-            isVideoLoaded ?
-              <video
-                css={S.BackgroundVideo}
-                src={require('@/assets/video/sea.mp4')}
-                autoPlay={true}
-                muted={true}
-                loop
-                playsInline
-                onLoadedData={(e) => {
-                  setIsVideoLoaded(true);
-                }}
-              /> :
-              <Image css={S.BackgroundVideo} src={require('@/assets/image/img-bg.png')} alt="img-bg" />
-          }
+          <Image css={S.BackgroundImage({ isVideoLoaded })} src={require('@/assets/image/img-bg.png')} alt="img-bg" />
+          <video
+            css={S.BackgroundVideo}
+            src={require('@/assets/video/sea.mp4')}
+            autoPlay={true}
+            muted={true}
+            loop
+            playsInline
+            onLoadedData={(e) => {
+              setIsVideoLoaded(true);
+            }}
+          /> :
         </div>
       </div>
     </>)
