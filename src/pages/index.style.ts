@@ -29,6 +29,7 @@ export const SwiperSlide = css`
   align-items: center;
   justify-content: center;
   font-size: 30px;
+  font-style: italic;
 `
 
 export const BackgroundImage = ({ isVideoLoaded = false }) => css`
