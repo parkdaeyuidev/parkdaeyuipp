@@ -68,4 +68,9 @@ export const ContentList = ({ text }: IProps) => [
       <Link href={externalUrls.git} target="_blank"><Image src={require('@/assets/image/logo-git.png')} alt="js" width={80} /></Link>
     </div>
   </div>,
+  '저는 이렇게 기여할 수 있습니다',
+  '개발한 기능의 로직과 동작을 협업하는 사람들에게 쉽게 설명 할 수 있습니다',
+  '플랫폼 서비스 개발 경험을 기반으로 앱 내 비즈니스 로직을 파악해 개선할 수 있습니다',
+  '주어진 업무만 수행하는 코더가 아닌 사업을 이끌어가는 팀의 일원으로서 함께 고민합니다',
+  '개발 기한을 준수하여 일정에 차질이 없도록 합니다',
 ];

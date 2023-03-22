@@ -29,9 +29,11 @@ export default function Home() {
     <>
       <Head>
         <title>안녕하세요. 함께하면 기분 좋은 개발자 박대윤입니다.</title>
-        <meta name="description" content="안녕하세요. 프론트엔드 개발자 박대윤입니다" />
+        <meta name="description" content="프론트엔드 엔지니어, 박대윤의 이력서입니다." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta property="og:image" content="/og.png"></meta>
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="/og.png" />
+        <meta property="og:locale" content="ko_KR" />
         <meta name="robots" content="noindex" />
         <link rel="icon" href="/favicon.ico" />
       </Head>

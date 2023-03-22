@@ -10,6 +10,7 @@ export const MainLayer = css`
   -ms-overflow-style: none; /* 인터넷 익스플로러 */
   scrollbar-width: none; /* 파이어폭스 */
   color: white;
+  line-height: 40px;
 
   ::-webkit-scrollbar{
     display: none;
@@ -22,7 +23,6 @@ export const MainLayer = css`
 `
 
 export const SwiperSlide = css`
-  /* width: 100vw; */
   height: 100%;   
   padding: 0 20px 40px;
   display: flex;
@@ -76,7 +76,7 @@ export const Phrase = ({ isOn = false }) => css`
   font-size: 50px;
   word-break: keep-all;
   opacity: ${isOn ? 1 : 0};
-  transition: all 1s;
+  transition: all 2s;
   pointer-events: initial;
 `
 
@@ -88,7 +88,7 @@ export const Player = css`
 `
 
 export const ScrollDown = css`
-  position: absolute;
+  position: fixed;
   width: 100%;
   z-index: 2;
   bottom: 0;
