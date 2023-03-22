@@ -10,7 +10,7 @@ export const ContentList = ({ text = "라이너" }) => [
   <div>
     <div>저의 주요 언어는 아래와 같습니다.</div>
     <br />
-    <div css={css`
+    <div css={css` 
       text-align: center;
       img {
         object-fit: contain;

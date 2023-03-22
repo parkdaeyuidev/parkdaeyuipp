@@ -13,4 +13,4 @@ export const externalUrls = {
   slack: 'https://slack.com/intl/ko-kr/',
   notion: 'https://www.notion.so/ko-kr',
   git: 'https://github.com/',
-}
+} 

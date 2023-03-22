@@ -9,10 +9,12 @@
     }
   },
   "extends": [
-    "next/core-web-vitals",
-    "airbnb-typescript",
-    "eslint:recommended",
-    "plugin:prettier/recommended",
-    "prettier"
-  ]
+    "airbnb-base",
+    "tslint:latest",
+    "tslint-config-prettier",
+    "tslint-plugin-prettier"
+  ],
+  "rules": {
+    "prettier": true
+  }
 }

@@ -1,9 +1,6 @@
-import { css } from '@emotion/react';
 import Head from 'next/head'
-import { MutableRefObject, useEffect, useRef, useState } from 'react';
-import { useInView } from 'react-intersection-observer';
+import { useEffect, useRef, useState } from 'react';
 import * as S from './index.style';
-import Image from 'next/image';
 import Lottie from 'react-lottie-player';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import PhraseFrame from '@/components/PhraseFrame';
@@ -21,7 +18,6 @@ export default function Home() {
       contentsRef.current?.pause()
     }
   }, [isPlayAudio])
-
 
   return (
     <>
@@ -48,7 +44,6 @@ export default function Home() {
                 </SwiperSlide>
               ))
             }
-
           </Swiper>
         </div>
         <audio src='/bg.mp3' ref={contentsRef} style={{ display: 'none' }} />
