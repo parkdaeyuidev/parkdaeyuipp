@@ -40,6 +40,8 @@ export const BackgroundImage = ({ isVideoLoaded = false }) => css`
   height: 100vh;
   object-fit: cover;
   overflow: hidden;
+  transition: all 1s;
+  ${!isVideoLoaded && css`filter: blur(5px)`};
 `
 
 export const BackgroundVideo = css`

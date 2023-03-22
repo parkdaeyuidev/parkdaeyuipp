@@ -11,6 +11,7 @@ import { useRouter } from 'next/router';
 export default function Home() {
   const router = useRouter();
   const contentsRef = useRef<HTMLAudioElement>(null);
+  const videoRef = useRef<HTMLVideoElement>(null);
   const [isPlayAudio, setIsPlayAudio] = useState(false);
   const [isVideoLoaded, setIsVideoLoaded] = useState(false);
   const companyName = router.query?.company as string;
@@ -76,15 +77,18 @@ export default function Home() {
         <div>
           <Image css={S.BackgroundImage({ isVideoLoaded })} src={require('@/assets/image/img-bg.png')} alt="img-bg" />
           <video
+            ref={videoRef}
             css={S.BackgroundVideo}
             src={require('@/assets/video/sea.mp4')}
             autoPlay={true}
             muted={true}
             loop
+            preload="metadata"
             playsInline
             onLoadedData={(e) => {
               setIsVideoLoaded(true);
             }}
+            poster={require('@/assets/image/img-bg.png')}
           /> :
         </div>
       </div>
