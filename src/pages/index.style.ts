@@ -22,12 +22,13 @@ export const MainLayer = css`
 `
 
 export const SwiperSlide = css`
-  width: 100%;
+  /* width: 100vw; */
   height: 100%;   
+  padding: 0 20px 40px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 40px;
+  font-size: 30px;
 `
 
 export const BackgroundImage = ({ isVideoLoaded = false }) => css`

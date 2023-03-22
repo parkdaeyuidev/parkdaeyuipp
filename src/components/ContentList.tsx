@@ -17,10 +17,10 @@ export const ContentList = ({ text = "라이너" }) => [
       }
     `}>
       <Link href={externalUrls.javascript} target="_blank">
-        <Image src={require('@/assets/image/logo-javascript.png')} alt="js" width={100} />
+        <Image src={require('@/assets/image/logo-javascript.png')} alt="js" width={80} />
       </Link>
       <Link href={externalUrls.typescript} target="_blank">
-        <Image src={require('@/assets/image/logo-typescript.png')} alt="js" width={100} />
+        <Image src={require('@/assets/image/logo-typescript.png')} alt="js" width={80} />
       </Link>
     </div>
   </div>,
@@ -33,13 +33,13 @@ export const ContentList = ({ text = "라이너" }) => [
         object-fit: contain;
       }
     `}>
-      <Link href={externalUrls.react} target="_blank"><Image src={require('@/assets/image/logo-react.png')} alt="js" width={100} /></Link>
-      <Link href={externalUrls["react-query"]} target="_blank"><Image src={require('@/assets/image/logo-react-query.png')} alt="js" width={100} /></Link>
-      <Link href={externalUrls.recoil} target="_blank"><Image src={require('@/assets/image/logo-recoil.png')} alt="js" width={100} /></Link>
-      <Link href={externalUrls["next-js"]} target="_blank"><Image src={require('@/assets/image/logo-nextjs.svg')} alt="js" width={100} /></Link>
-      <Link href={externalUrls["emotion-js"]} target="_blank"><Image src={require('@/assets/image/logo-emotion.png')} alt="js" width={100} /></Link>
-      <Link href={externalUrls.html} target="_blank"><Image src={require('@/assets/image/logo-html.png')} alt="js" width={100} height={100} /></Link>
-      <Link href={externalUrls.css} target="_blank"><Image src={require('@/assets/image/logo-css.png')} alt="js" width={100} height={100} /></Link>
+      <Link href={externalUrls.react} target="_blank"><Image src={require('@/assets/image/logo-react.png')} alt="js" width={80} /></Link>
+      <Link href={externalUrls["react-query"]} target="_blank"><Image src={require('@/assets/image/logo-react-query.png')} alt="js" width={80} /></Link>
+      <Link href={externalUrls.recoil} target="_blank"><Image src={require('@/assets/image/logo-recoil.png')} alt="js" width={80} /></Link>
+      <Link href={externalUrls["next-js"]} target="_blank"><Image src={require('@/assets/image/logo-nextjs.svg')} alt="js" width={80} /></Link>
+      <Link href={externalUrls["emotion-js"]} target="_blank"><Image src={require('@/assets/image/logo-emotion.png')} alt="js" width={80} /></Link>
+      <Link href={externalUrls.html} target="_blank"><Image src={require('@/assets/image/logo-html.png')} alt="js" width={80} height={80} /></Link>
+      <Link href={externalUrls.css} target="_blank"><Image src={require('@/assets/image/logo-css.png')} alt="js" width={80} height={80} /></Link>
     </div>
   </div>,
   <div>
@@ -48,11 +48,11 @@ export const ContentList = ({ text = "라이너" }) => [
     <div css={css`
         text-align: center;
       `}>
-      <Link href={externalUrls.jira} target="_blank"><Image src={require('@/assets/image/logo-jira.png')} alt="js" width={100} /></Link>
-      <Link href={externalUrls.vsc} target="_blank"><Image src={require('@/assets/image/logo-vsc.png')} alt="js" width={100} /></Link>
-      <Link href={externalUrls.slack} target="_blank"><Image src={require('@/assets/image/logo-slack.png')} alt="js" width={100} /></Link>
-      <Link href={externalUrls.notion} target="_blank"><Image src={require('@/assets/image/logo-notion.png')} alt="js" width={100} /></Link>
-      <Link href={externalUrls.git} target="_blank"><Image src={require('@/assets/image/logo-git.png')} alt="js" width={100} /></Link>
+      <Link href={externalUrls.jira} target="_blank"><Image src={require('@/assets/image/logo-jira.png')} alt="js" width={80} /></Link>
+      <Link href={externalUrls.vsc} target="_blank"><Image src={require('@/assets/image/logo-vsc.png')} alt="js" width={80} /></Link>
+      <Link href={externalUrls.slack} target="_blank"><Image src={require('@/assets/image/logo-slack.png')} alt="js" width={80} /></Link>
+      <Link href={externalUrls.notion} target="_blank"><Image src={require('@/assets/image/logo-notion.png')} alt="js" width={80} /></Link>
+      <Link href={externalUrls.git} target="_blank"><Image src={require('@/assets/image/logo-git.png')} alt="js" width={80} /></Link>
     </div>
   </div>,
 ];
