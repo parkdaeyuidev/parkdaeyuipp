@@ -4,21 +4,30 @@ export const MainLayer = css`
   position: absolute;
   left: 0;
   top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
+  width: 100vw;
+  height: 100vh;
   z-index: 1;
   -ms-overflow-style: none; /* 인터넷 익스플로러 */
   scrollbar-width: none; /* 파이어폭스 */
+  color: white;
 
   ::-webkit-scrollbar{
     display: none;
   }
+
+  .swiper{
+    width:100%;
+    height: 100%;
+  }
 `
 
-export const Scroll = css`
-  height: 2000vh;
-  /* pointer-events: none; */
+export const SwiperSlide = css`
+  width: 100%;
+  height: 100%;   
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
 `
 
 export const BackgroundVideo = css`

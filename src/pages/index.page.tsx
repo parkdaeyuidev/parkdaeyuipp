@@ -5,19 +5,12 @@ import { useInView } from 'react-intersection-observer';
 import * as S from './index.style';
 import Image from 'next/image';
 import Lottie from 'react-lottie-player';
-import { useScroll } from '@/hooks/useScroll';
-import { phraseList } from '@/components/phraseList';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import PhraseFrame from '@/components/PhraseFrame';
+import { PhraseList } from '@/components/PhraseList';
 export default function Home() {
-
   const contentsRef = useRef<HTMLAudioElement>(null);
-  const [selectedContent, setSelectedContent] = useState(0);
   const [isPlayAudio, setIsPlayAudio] = useState(false);
-  const { state: { height, now }, mainElementRef, scrollElementRef } = useScroll();
-
-  useEffect(() => {
-    const selectedNum = Number(((now / height * phraseList.length)).toFixed(0)) || 0;
-    setSelectedContent(selectedNum);
-  }, [now])
 
   useEffect(() => {
     if (isPlayAudio) {
@@ -29,6 +22,7 @@ export default function Home() {
     }
   }, [isPlayAudio])
 
+
   return (
     <>
       <Head>
@@ -38,18 +32,24 @@ export default function Home() {
         <meta name="robots" content="noindex" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div css={css`
-        width: 100%;
-        height: 100%;
-        overflow: hidden;
-      `}>
-        <div css={S.MainLayer} ref={mainElementRef} className="main">
-          <div css={S.Scroll} ref={scrollElementRef} className="scroll"></div>
-        </div>
-        <div css={S.PhraseFrame}>
-          {
-            phraseList.map((el, idx) => <div css={S.Phrase({ isOn: idx === selectedContent })}>{el}</div>)
-          }
+      <div>
+        <div css={S.MainLayer} className="main">
+          <Swiper
+            direction={"vertical"}
+          >
+            {
+              PhraseList({ text: "라이너" }).map((el) => (
+                <SwiperSlide>
+                  <div css={S.SwiperSlide}>
+                    <PhraseFrame>
+                      {el}
+                    </PhraseFrame>
+                  </div>
+                </SwiperSlide>
+              ))
+            }
+
+          </Swiper>
         </div>
         <audio src='/bg.mp3' ref={contentsRef} style={{ display: 'none' }} />
         <div css={S.Player} onClick={() => setIsPlayAudio(prev => !prev)}>
@@ -61,7 +61,7 @@ export default function Home() {
           />
         </div>
         <div css={S.ScrollDown} onClick={() => setIsPlayAudio(prev => !prev)}>
-          <div>마우스 휠을 아래로 내려주세요.</div>
+          <div>위 아래로 스와이프 해주세요.</div>
           <Lottie
             animationData={require('assets/lottie/scrollDown.json')}
             play
@@ -70,9 +70,19 @@ export default function Home() {
           />
         </div>
         <div>
-          <video css={S.BackgroundVideo} src={require('@/assets/video/sea.mp4')} autoPlay muted loop playsInline />
+          <video
+            css={S.BackgroundVideo}
+            src={require('@/assets/video/sea.mp4')}
+            autoPlay
+            muted
+            loop
+            playsInline
+            onLoadedData={(e) => {
+              console.log(e);
+              console.log('loaded!');
+            }}
+          />
         </div>
       </div>
-    </>
-  )
+    </>)
 }
