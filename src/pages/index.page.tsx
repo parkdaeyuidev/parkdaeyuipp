@@ -83,9 +83,8 @@ export default function Home() {
             autoPlay={true}
             muted={true}
             loop
-            preload="metadata"
             playsInline
-            onLoadedData={(e) => {
+            onPlay={() => {
               setIsVideoLoaded(true);
             }}
             poster={require('@/assets/image/img-bg.png')}
