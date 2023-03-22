@@ -3,7 +3,7 @@ import { css } from "@emotion/react";
 import Image from "next/image";
 import Link from "next/link";
 
-export const PhraseList = ({ text = "라이너" }) => [
+export const ContentList = ({ text = "라이너" }) => [
   '안녕하세요!',
   <div>{text}에 지원한,<br /> 함께 일하면 기분 좋은 개발자 박대윤입니다</div>,
   <div>저는 5년차 프론트엔드 개발자입니다</div>,

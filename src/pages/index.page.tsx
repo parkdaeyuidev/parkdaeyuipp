@@ -7,7 +7,7 @@ import Image from 'next/image';
 import Lottie from 'react-lottie-player';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import PhraseFrame from '@/components/PhraseFrame';
-import { PhraseList } from '@/components/PhraseList';
+import { ContentList } from '@/components/ContentList';
 export default function Home() {
   const contentsRef = useRef<HTMLAudioElement>(null);
   const [isPlayAudio, setIsPlayAudio] = useState(false);
@@ -38,7 +38,7 @@ export default function Home() {
             direction={"vertical"}
           >
             {
-              PhraseList({ text: "라이너" }).map((el) => (
+              ContentList({ text: "라이너" }).map((el) => (
                 <SwiperSlide>
                   <div css={S.SwiperSlide}>
                     <PhraseFrame>
