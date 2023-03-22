@@ -72,10 +72,10 @@ export default function Home() {
             muted
             loop
             playsInline
-            onLoadedData={(e) => {
-              console.log(e);
-              console.log('loaded!');
-            }}
+          // onLoadedData={(e) => {
+          //   console.log(e);
+          //   console.log('loaded!');
+          // }}
           />
         </div>
       </div>
