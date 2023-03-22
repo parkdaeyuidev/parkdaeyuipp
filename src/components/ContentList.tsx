@@ -3,9 +3,13 @@ import { css } from "@emotion/react";
 import Image from "next/image";
 import Link from "next/link";
 
-export const ContentList = ({ text = "라이너" }) => [
+interface IProps {
+  text?: string
+}
+
+export const ContentList = ({ text }: IProps) => [
   '안녕하세요!',
-  <div>{text}에 지원한,<br /> 함께 일하면 기분 좋은 개발자 박대윤입니다</div>,
+  <div>{text && `${text}에 지원한`}{text && <br />} 함께 일하면 기분 좋은 개발자 박대윤입니다</div>,
   <div>저는 5년차 프론트엔드 개발자입니다</div>,
   <div>
     <div>저의 주요 언어는 아래와 같습니다.</div>
@@ -43,15 +47,24 @@ export const ContentList = ({ text = "라이너" }) => [
     </div>
   </div>,
   <div>
-    <div>최근 자주 사용하고 있는 업무툴은 아래와 같습니다.</div>
+    <div>최근 자주 사용하고 있는 커뮤니케이션 도구는 아래와 같습니다.</div>
     <br />
     <div css={css`
         text-align: center;
       `}>
       <Link href={externalUrls.jira} target="_blank"><Image src={require('@/assets/image/logo-jira.png')} alt="js" width={80} /></Link>
-      <Link href={externalUrls.vsc} target="_blank"><Image src={require('@/assets/image/logo-vsc.png')} alt="js" width={80} /></Link>
       <Link href={externalUrls.slack} target="_blank"><Image src={require('@/assets/image/logo-slack.png')} alt="js" width={80} /></Link>
       <Link href={externalUrls.notion} target="_blank"><Image src={require('@/assets/image/logo-notion.png')} alt="js" width={80} /></Link>
+      <Link href={externalUrls.git} target="_blank"><Image src={require('@/assets/image/logo-git.png')} alt="js" width={80} /></Link>
+    </div>
+  </div>,
+  <div>
+    <div>최근 자주 사용하고 있는 개발 도구는 아래와 같습니다.</div>
+    <br />
+    <div css={css`
+      text-align: center;
+    `}>
+      <Link href={externalUrls.vsc} target="_blank"><Image src={require('@/assets/image/logo-vsc.png')} alt="js" width={80} /></Link>
       <Link href={externalUrls.git} target="_blank"><Image src={require('@/assets/image/logo-git.png')} alt="js" width={80} /></Link>
     </div>
   </div>,

@@ -7,10 +7,13 @@ import PhraseFrame from '@/components/PhraseFrame';
 import { ContentList } from '@/components/ContentList';
 import Image from 'next/image';
 import { css } from '@emotion/react';
+import { useRouter } from 'next/router';
 export default function Home() {
+  const router = useRouter();
   const contentsRef = useRef<HTMLAudioElement>(null);
   const [isPlayAudio, setIsPlayAudio] = useState(false);
   const [isVideoLoaded, setIsVideoLoaded] = useState(false);
+  const companyName = router.query?.company as string;
 
   useEffect(() => {
     if (isPlayAudio) {
@@ -25,9 +28,10 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>안녕하세요. 함께하면 기분 좋을 개발자 박대윤입니다.</title>
+        <title>안녕하세요. 함께하면 기분 좋은 개발자 박대윤입니다.</title>
         <meta name="description" content="안녕하세요. 프론트엔드 개발자 박대윤입니다" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta property="og:image" content="/og.png"></meta>
         <meta name="robots" content="noindex" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -37,7 +41,7 @@ export default function Home() {
             direction={"vertical"}
           >
             {
-              ContentList({ text: "라이너" }).map((el) => (
+              ContentList({ text: companyName }).map((el) => (
                 <SwiperSlide>
                   <div css={S.SwiperSlide}>
                     <PhraseFrame>
