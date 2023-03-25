@@ -1,14 +1,8 @@
 import Head from 'next/head';
 import { useEffect, useRef, useState } from 'react';
 import * as S from './index.style';
-import Lottie from 'react-lottie-player';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import PhraseFrame from '@/components/PhraseFrame';
-import { ContentList } from '@/components/ContentList';
-import Image from 'next/image';
 import { css } from '@emotion/react';
 import { useRouter } from 'next/router';
-import Background from '@/components/Background';
 import TextArea from '@/components/TextArea';
 import Section from '@/components/Section';
 export default function Home() {
