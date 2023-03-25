@@ -4,7 +4,7 @@ export const Container = css`
   left: 0;
   top: 0;
   width: 100%;
-  max-width: 800px;
+  max-width: 1000px;
   margin: 0 auto;
 `;
 
