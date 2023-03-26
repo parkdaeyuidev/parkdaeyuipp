@@ -113,6 +113,8 @@ export default function Home() {
                   <li>Ant-Design</li>
                   <li>EmotionJS</li>
                   <li>Recoil</li>
+                  <li>Gitlab</li>
+                  <li>Jira</li>
                 </ul>
                 <div className="line" />
               </TextArea>
@@ -131,6 +133,8 @@ export default function Home() {
                   <li>React-Query</li>
                   <li>EmotionJS</li>
                   <li>Recoil</li>
+                  <li>Gitlab</li>
+                  <li>Jira</li>
                 </ul>
               </TextArea>
             </div>
@@ -198,6 +202,8 @@ export default function Home() {
                   <li>Git</li>
                   <li>Google Analytics</li>
                   <li>Firebase</li>
+                  <li>Notion</li>
+                  <li>Trello</li>
                 </ul>
                 <div className="line" />
               </TextArea>
@@ -285,6 +291,7 @@ export default function Home() {
             <br />
             <p>• 문제를 해결하는데 있어 아는 것과 모르는 것을 정확히 파악해 이를 공유, 대충 얼버무리지 않습니다.</p>
             <p>• 개발한 기능의 로직과 동작을 협업하는 사람들에게 쉽게 설명 할 수 있습니다.</p>
+            <p>• 개발 기한을 준수하여 일정에 차질이 없도록 합니다.</p>
             <p>• 플랫폼 서비스 개발 경험을 기반으로 앱 내 비즈니스 로직을 파악해 개선할 수 있습니다.</p>
             <p>• 주어진 업무만 수행하는 코더가 아닌 사업을 이끌어가는 팀의 일원으로서 함께 고민합니다.</p>
             <br />
@@ -312,6 +319,9 @@ export default function Home() {
             <p>• 비즈니스 로직에 맞춰 적절한 컴포넌트 함수를 만들기 위해 고민합니다.</p>
             <p>• 공통으로 쓰이는 로직을 hook을 이용해 모듈화하여 사용합니다.</p>
           </TextArea>
+          <br />
+          <br />
+          Copyright © 박대윤 All rights reserved.
         </Section>
       </div>
     </>
