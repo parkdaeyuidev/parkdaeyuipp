@@ -51,6 +51,8 @@ export default function Home() {
             </h1>
             <br />
             <h4>
+              안녕하세요.
+              <br />
               {companyName && `${companyName}에 지원한 `}
               함께 일하면 기분 좋은 개발자 박대윤입니다. <br />
               저는 서울에서 5년차 웹 프론트엔드 엔지니어로 일하고 있습니다.
@@ -96,12 +98,12 @@ export default function Home() {
               `}
             >
               <TextArea>
-                <h4>| 커머스서비스 런칭</h4>
+                <h4>| 커머스서비스 개발</h4>
                 <br />
-                <p>서비스 내 커머스기능을 런칭, 유지보수 하였습니다.</p>
+                <p>서비스 내 런칭예정인 커머스기능을 개발하였습니다.</p>
                 <br />
                 <h5>What did I do</h5>
-                <p>홈, 상세페이지, 장바구니, 쿠폰, 리뷰관리 기능 개발 및 유관된 어드민 기능 개발</p>
+                <p>- 홈, 상세페이지, 장바구니, 쿠폰, 리뷰관리 기능 개발 및 유관된 어드민 기능 개발</p>
                 <br />
                 <h5>Tech Stack</h5>
                 <ul>
@@ -120,7 +122,7 @@ export default function Home() {
                 <p>서비스 내 기능중 일부인 반려견 건강체크 기능을 개발하였습니다</p>
                 <br />
                 <h5>What did I do</h5>
-                <p>반려견 건강체크, 음수 급여량체크 기능, 접종&진료 기능 개발</p>
+                <p>- 반려견 건강체크, 음수 급여량체크 기능, 접종&진료 기능 개발</p>
                 <br />
                 <h5>Tech Stack</h5>
                 <ul>
@@ -165,7 +167,7 @@ export default function Home() {
             >
               <TextArea>
                 <h4>| 라운지 런칭 및 유지보수</h4>
-                <p>2018.12 ~</p>
+                <p>2018.12 ~ 2022.06</p>
                 <br />
                 <p>
                   웅진씽크빅 회원 대상으로 운영 중인 네이티브 서비스 내에 Django 기반의 '놀이의 발견' 웹앱을
@@ -173,10 +175,10 @@ export default function Home() {
                 </p>
                 <br />
                 <h4>What did I do</h4>
-                <p>- 단독 프로젝트로 앱 내 모든 기능 개발</p>
+                <p>- 초기 단독 프로젝트로 앱 내 프론트 모든 기능 담당했습니다.</p>
                 <p>
-                  - HTML,CSS, JQUERY, Django 를 주요 기술스택으로 최초 서비스를 런칭, 이후 WEBPACK 을 도입하여 VanilaJS,
-                  React, TypeScript 기반의 리부팅 진행했습니다.
+                  - Html, Css, Jquery, Django 를 주요 기술스택으로 최초 서비스를 런칭, 이후 Webpack 을 도입하여 React,
+                  TypeScript 기반의 리부팅 진행했습니다.
                 </p>
                 <br />
                 <h4>Tech Stack</h4>
@@ -189,8 +191,8 @@ export default function Home() {
                   <li>Jquery</li>
                   <li>Axios</li>
                   <li>TypeScript</li>
-                  <li>scss</li>
-                  <li>styledComponent</li>
+                  <li>Scss</li>
+                  <li>StyledComponent</li>
                   <li>Webpack</li>
                   <li>Django</li>
                   <li>Git</li>
@@ -204,7 +206,7 @@ export default function Home() {
                 <Link href="https://nolbal.com/" target="_blank">
                   <p>https://nolbal.com/</p>
                 </Link>
-                <p>2021.04 ~</p>
+                <p>2021.04 ~ 2022.06</p>
                 <br />
                 <p>기존 웹앱을 pc 및 mobile 브라우저에서도 사용할 수 있도록 웹 서비스를 개발하였습니다.</p>
                 <br />
@@ -223,7 +225,7 @@ export default function Home() {
                   <li>StyledComponent</li>
                   <li>Git</li>
                   <li>Google Analytics</li>
-                  <li>firebase</li>
+                  <li>Firebase</li>
                   <li>Jira</li>
                   <li>Confluence</li>
                 </ul>
@@ -231,9 +233,9 @@ export default function Home() {
               </TextArea>
               <TextArea>
                 <h4>| 이벤트 페이지 자동화 시스템 개발 및 유지보수</h4>
-                <p>2020.10 ~</p>
+                <p>2020.10 ~ 2021.01</p>
                 <br />
-                <p>서비스 내 이벤트 페이지르 관리자 페이지에서 코딩 없이 생성할 수 있도록 개발하였습니다.</p>
+                <p>서비스 내 이벤트 페이지를 관리자 페이지에서 코딩 없이 생성할 수 있도록 개발하였습니다.</p>
                 <br />
                 <h5>What did I do</h5>
                 <p>- 앱 내 이벤트 페이지에서 반복되는 기능들을 백엔드 팀과 협의해 자동으로 생성되도록 개발</p>
@@ -257,7 +259,7 @@ export default function Home() {
               </TextArea>
               <TextArea>
                 <h4>| 사내 체온 기입 시스템 개발</h4>
-                <p>22021.12 ~ 2022.01</p>
+                <p>2021.12 ~ 2022.01</p>
                 <br />
                 <p>사내 직원 출입시 간단한 버튼 조작을 통해 체온을 기입할 수 있는 웹앱을 개발하였습니다.</p>
                 <br />
@@ -279,7 +281,7 @@ export default function Home() {
         </Section>
         <Section>
           <TextArea>
-            <h3>| Overall & Communication</h3>
+            <h3>| Communication</h3>
             <br />
             <p>• 문제를 해결하는데 있어 아는 것과 모르는 것을 정확히 파악해 이를 공유, 대충 얼버무리지 않습니다.</p>
             <p>• 개발한 기능의 로직과 동작을 협업하는 사람들에게 쉽게 설명 할 수 있습니다.</p>
