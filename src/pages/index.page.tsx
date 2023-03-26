@@ -1,25 +1,13 @@
 import Head from 'next/head';
-import { useEffect, useRef, useState } from 'react';
 import * as S from './index.style';
 import { css } from '@emotion/react';
 import { useRouter } from 'next/router';
 import TextArea from '@/components/TextArea';
 import Section from '@/components/Section';
+import Link from 'next/link';
 export default function Home() {
   const router = useRouter();
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const contentsRef = useRef<HTMLAudioElement>(null);
-  const [isPlayAudio, setIsPlayAudio] = useState(false);
   const companyName = router.query?.company as string;
-
-  useEffect(() => {
-    if (isPlayAudio) {
-      contentsRef.current!.volume = 0.1;
-      contentsRef.current?.play();
-    } else {
-      contentsRef.current?.pause();
-    }
-  }, [isPlayAudio]);
 
   return (
     <>
@@ -41,7 +29,12 @@ export default function Home() {
       <div css={S.Container}>
         <Section>
           <h3>Contact</h3>
-          <h5>Github | Email | Blog</h5>
+          <h5>
+            <Link href="https://github.com/parkdaeyuidev" target="_blank">
+              Github
+            </Link>{' '}
+            | <Link href="mailto:parkdaeyuidev@gmail.com">Email</Link>
+          </h5>
           <TextArea>
             <h1>
               함께 일하면 <br />
@@ -91,6 +84,9 @@ export default function Home() {
               <TextArea>
                 <h4>미래엔</h4>
                 <h4>반려의고수</h4>
+                <Link href="https://m.van-go.co.kr/" target="_blank">
+                  <p>https://m.van-go.co.kr/</p>
+                </Link>
                 <p>2022.08 ~</p>
               </TextArea>
             </div>
@@ -100,14 +96,14 @@ export default function Home() {
               `}
             >
               <TextArea>
-                <h4>| 커머스 런칭 및 유지보수</h4>
+                <h4>| 커머스서비스 런칭</h4>
                 <br />
                 <p>서비스 내 커머스기능을 런칭, 유지보수 하였습니다.</p>
                 <br />
-                <h5>• What did I do</h5>
-                <p>홈, 상세페이지, 장바구니, 쿠폰, 리뷰관리 기능 개발, 유관된 어드민 기능 개발</p>
+                <h5>What did I do</h5>
+                <p>홈, 상세페이지, 장바구니, 쿠폰, 리뷰관리 기능 개발 및 유관된 어드민 기능 개발</p>
                 <br />
-                <h5>• Tech Stack</h5>
+                <h5>Tech Stack</h5>
                 <ul>
                   <li>Next.Js</li>
                   <li>TypeScript</li>
@@ -205,7 +201,9 @@ export default function Home() {
               </TextArea>
               <TextArea>
                 <h4>| PC 런칭 및 유지보수</h4>
-                <p>https://nolbal.com/</p>
+                <Link href="https://nolbal.com/" target="_blank">
+                  <p>https://nolbal.com/</p>
+                </Link>
                 <p>2021.04 ~</p>
                 <br />
                 <p>기존 웹앱을 pc 및 mobile 브라우저에서도 사용할 수 있도록 웹 서비스를 개발하였습니다.</p>
