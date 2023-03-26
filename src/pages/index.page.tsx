@@ -90,6 +90,7 @@ export default function Home() {
                   <p>https://m.van-go.co.kr/</p>
                 </Link>
                 <p>2022.08 ~</p>
+                <p>사원</p>
               </TextArea>
             </div>
             <div
@@ -162,6 +163,7 @@ export default function Home() {
                 <h4>웅진씽크빅</h4>
                 <h4>놀이의발견</h4>
                 <p>2018.08 ~ 2022.06</p>
+                <p>파트장</p>
               </TextArea>
             </div>
             <div
