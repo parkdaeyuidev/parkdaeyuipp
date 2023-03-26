@@ -108,7 +108,7 @@ body {
 
   background-image: url('/images/bg-city3.jpeg');
   background-attachment: fixed;
-  background-size: cover;
+  background-size: auto 100vh;
 }
 
 h1 {

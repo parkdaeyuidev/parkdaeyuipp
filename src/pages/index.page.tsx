@@ -66,10 +66,6 @@ export default function Home() {
             </h4>
           </TextArea>
         </Section>
-        {/* <Section isBackground={false}>
-          <h1 className="fw">Contact</h1>
-        </Section> */}
-
         <Section isBackground={false}>
           <h1 className="fw">Experience</h1>
         </Section>
@@ -147,7 +143,6 @@ export default function Home() {
           <div
             css={css`
               display: flex;
-
               @media screen and (max-width: 960px) {
                 flex-direction: column;
               }
@@ -156,7 +151,6 @@ export default function Home() {
             <div
               css={css`
                 flex-basis: 200px;
-
                 @media screen and (max-width: 960px) {
                   flex-basis: 100px;
                 }
@@ -298,19 +292,6 @@ export default function Home() {
           </TextArea>
         </Section>
       </div>
-      {/* <audio src="/bg.mp3" ref={contentsRef} style={{ display: 'none' }} />
-      <div css={S.Player} onClick={() => setIsPlayAudio((prev) => !prev)}>
-        <Lottie
-          animationData={require('assets/lottie/play.json')}
-          play={isPlayAudio}
-          loop
-          style={{ width: 28, height: 28 }}
-        />
-      </div> */}
-      {/* <div css={S.ScrollDown} onClick={() => setIsPlayAudio((prev) => !prev)}>
-        <div>위 아래로 스와이프 해주세요.</div>
-        <Lottie animationData={require('assets/lottie/scrollDown.json')} play loop style={{ width: 28, height: 28 }} />
-      </div> */}
     </>
   );
 }
