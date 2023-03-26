@@ -217,10 +217,18 @@ export default function Home() {
                 <p>- 결제하기 모듈 개발</p>
                 <br />
                 <h5>Tech Stack</h5>
-                <p>
-                  NextJS, TypeScript, Redux-toolkit, Axios, StyledComponent,Git,Google Analytics, firebase, Git, Jira,
-                  Confluence
-                </p>
+                <ul>
+                  <li>NextJS</li>
+                  <li>TypeScript</li>
+                  <li>Redux-toolkit</li>
+                  <li>Axios</li>
+                  <li>StyledComponent</li>
+                  <li>Git</li>
+                  <li>Google Analytics</li>
+                  <li>firebase</li>
+                  <li>Jira</li>
+                  <li>Confluence</li>
+                </ul>
                 <div className="line" />
               </TextArea>
               <TextArea>
@@ -236,7 +244,17 @@ export default function Home() {
                 </p>
                 <br />
                 <h5>Tech Stack</h5>
-                <p>React,WebPack, VanilaJS, StyledComponent, Css, Django, Git, Jira, Confluence</p>
+                <ul>
+                  <li>React</li>
+                  <li>WebPack</li>
+                  <li>VanilaJS</li>
+                  <li>StyledComponent</li>
+                  <li>Css</li>
+                  <li>Django</li>
+                  <li>Git</li>
+                  <li>Jira</li>
+                  <li>Confluence</li>
+                </ul>
                 <div className="line" />
               </TextArea>
               <TextArea>
@@ -249,7 +267,11 @@ export default function Home() {
                 <p>- Apps Script를 이용해 화면 내 입력한 값이 SpreadSheet에 날짜별로 기입됨</p>
                 <br />
                 <h5>Tech Stack</h5>
-                <p>Google Apps Script, Google SpreadSheet, VanilaJS</p>
+                <ul>
+                  <li>Google Apps Script</li>
+                  <li>Google SpreadSheet</li>
+                  <li>VanilaJS</li>
+                </ul>
               </TextArea>
             </div>
           </div>
