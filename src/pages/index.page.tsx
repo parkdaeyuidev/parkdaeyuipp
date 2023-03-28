@@ -181,10 +181,10 @@ export default function Home() {
                 </p>
                 <br />
                 <h4>What did I do</h4>
-                <p>- 초기 단독 프로젝트로 앱 내 프론트 모든 기능 담당했습니다.</p>
+                <p>- 초기 단독 프로젝트로 앱 내 프론트 모든 기능 담당</p>
                 <p>
                   - Html, Css, Jquery, Django 를 주요 기술스택으로 최초 서비스를 런칭, 이후 Webpack 을 도입하여 React,
-                  TypeScript 기반의 리부팅 진행했습니다.
+                  TypeScript 기반의 리부팅 진행
                 </p>
                 <br />
                 <h4>Tech Stack</h4>
