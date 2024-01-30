@@ -115,7 +115,6 @@ export default function Home() {
                   <li>BitBucket</li>
                   <li>Jira</li>
                 </ul>
-                <div className="line" />
               </TextArea>
             </div>
           </div>
