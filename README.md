@@ -10,9 +10,28 @@
 
 <br>
 
+### **(주) 한샘**
+
+2024.07 ~ (대리)<br><br>
+
+### | 홈퍼니싱 솔루션 개발
+
+한샘의 영업시스템으로 런칭 예정인 홈퍼니싱 솔루션 개발에 참여하였습니다 
+
+#### What did I do
+
+- 상담,상품,견적 생성 및 수정기능 개발
+- - 주문 수정 내 상품 추가기능 개발
+
+#### Tech Stack
+
+- NextJs, TypeScript, SWR, Design-System, Redux-Saga, Redux-toolkit, BitBucket, Jira<br><br>
+
+<br><br>
+
 ### **미래엔 반려의고수(https://m.van-go.co.kr/)**
 
-2022.08 ~ (사원)<br><br>
+2022.08 ~ 2023.04(사원)<br><br>
 
 ### | 커머스서비스 개발
 
