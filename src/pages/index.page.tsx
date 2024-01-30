@@ -86,7 +86,7 @@ export default function Home() {
               <TextArea>
                 <h4>(주)한샘</h4>
                 <p>2023.07 ~</p>
-                <p>대리</p>
+                <p>대리(파트리더)</p>
               </TextArea>
             </div>
             <div
@@ -97,7 +97,7 @@ export default function Home() {
               <TextArea>
                 <h4>| 홈 퍼니싱 솔루션 런칭</h4>
                 <br />
-                <p>3월 런칭 예정인 한샘 내 영업시스템, 홈퍼니싱 솔루션에 참여하였습니다.</p>
+                <p>2024년 3월 런칭 예정인 한샘 내 영업시스템, 홈퍼니싱 솔루션에 참여하였습니다.</p>
                 <br />
                 <h5>What did I do</h5>
                 <p>- 상담,상품,견적 생성 및 수정기능 개발</p>
@@ -140,13 +140,11 @@ export default function Home() {
               `}
             >
               <TextArea>
-                <h4>미래엔</h4>
-                <h4>반려의고수</h4>
+                <h4>(주)미래엔 반려의고수</h4>
                 <Link href="https://m.van-go.co.kr/" target="_blank">
                   <p>https://m.van-go.co.kr/</p>
                 </Link>
                 <p>2022.08 ~ 2023.04</p>
-                <p>사원</p>
               </TextArea>
             </div>
             <div
@@ -216,10 +214,9 @@ export default function Home() {
               `}
             >
               <TextArea>
-                <h4>웅진씽크빅</h4>
-                <h4>놀이의발견</h4>
+                <h4>(주)웅진씽크빅 놀이의발견</h4>
                 <p>2018.08 ~ 2022.06</p>
-                <p>대리</p>
+                <p>대리(파트리더)</p>
               </TextArea>
             </div>
             <div
