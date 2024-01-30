@@ -85,7 +85,7 @@ export default function Home() {
             >
               <TextArea>
                 <h4>(주)한샘</h4>
-                <p>2023.07</p>
+                <p>2023.07 ~</p>
                 <p>대리</p>
               </TextArea>
             </div>
