@@ -84,12 +84,69 @@ export default function Home() {
               `}
             >
               <TextArea>
+                <h4>(주)한샘</h4>
+                <p>2023.07</p>
+                <p>대리</p>
+              </TextArea>
+            </div>
+            <div
+              css={css`
+                flex: 1;
+              `}
+            >
+              <TextArea>
+                <h4>| 홈 퍼니싱 솔루션 런칭</h4>
+                <br />
+                <p>3월 런칭 예정인 한샘 내 영업시스템, 홈퍼니싱 솔루션에 참여하였습니다.</p>
+                <br />
+                <h5>What did I do</h5>
+                <p>- 상담,상품,견적 생성 및 수정기능 개발</p>
+                <p>- 주문 수정 내 상품 추가기능 개발</p>
+                <br />
+                <h5>Tech Stack</h5>
+                <ul>
+                  <li>Next.Js</li>
+                  <li>Monorepo</li>
+                  <li>TypeScript</li>
+                  <li>SWR</li>
+                  <li>Design-System</li>
+                  <li>Redux-Saga</li>
+                  <li>Redux-toolkit</li>
+                  <li>BitBucket</li>
+                  <li>Jira</li>
+                </ul>
+                <div className="line" />
+              </TextArea>
+            </div>
+          </div>
+        </Section>
+        <Section isBackground={false} />
+        <Section>
+          <div
+            css={css`
+              display: flex;
+
+              @media screen and (max-width: 960px) {
+                flex-direction: column;
+              }
+            `}
+          >
+            <div
+              css={css`
+                flex-basis: 200px;
+
+                @media screen and (max-width: 960px) {
+                  flex-basis: 100px;
+                }
+              `}
+            >
+              <TextArea>
                 <h4>미래엔</h4>
                 <h4>반려의고수</h4>
                 <Link href="https://m.van-go.co.kr/" target="_blank">
                   <p>https://m.van-go.co.kr/</p>
                 </Link>
-                <p>2022.08 ~</p>
+                <p>2022.08 ~ 2023.04</p>
                 <p>사원</p>
               </TextArea>
             </div>
@@ -163,7 +220,7 @@ export default function Home() {
                 <h4>웅진씽크빅</h4>
                 <h4>놀이의발견</h4>
                 <p>2018.08 ~ 2022.06</p>
-                <p>파트장</p>
+                <p>대리</p>
               </TextArea>
             </div>
             <div
